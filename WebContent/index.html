@@ -1,0 +1,129 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Student Login</title>
+  <!--jquery link-->
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!--jQuery External Link-->
+    <script src="app-content/js/script.js"></script>
+
+    <!--bootstrap link-->
+    <script src="app-content/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="app-content/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="app-content/bootstrap-3.3.7-dist/css/bootstrap-theme.css">
+    
+    <!--External StyleSheet link-->
+    <link rel="stylesheet" href="app-content/bootstrap-3.3.7-dist/css/style.css">
+  
+  <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script> 
+  <link rel="stylesheet" src="/assets/css/style.css">
+  
+  <script src="app.js"></script>
+  <script src="login/loginController.js"></script>
+  <script src="app-services/loginService.js"></script>
+  <script src="app-services/registerService.js"></script>
+  <script src="app-services/updationService.js"></script>
+  <script src="app-services/homeService.js"></script>
+  <script src="app-services/applyService.js"></script>
+  <script src="app-services/appliedService.js"></script>
+  <style>
+  	.odApply
+  		{
+				position:absolute;
+			top:20%;
+			left:20%;
+			width:70%;
+			box-shadow: 0 1px 49px rgba(0, 0, 0, 0.3);
+			padding:2%;
+		}
+  	label
+  	{
+  		font-weight: bold;
+  	}
+  	.container1
+  	{
+  		width:100%;
+  	}
+  	.form-control{
+            width: 90%;
+     }
+     .user{
+         float: left;
+         width: 50%;
+     }
+     .col-form-label
+     {
+         text-align: right;
+     }
+  	 .col-md-3{
+            width:33.3%;
+            padding-left: 0px;
+        }
+        .col-md-6{
+            padding-left: 0px;
+        }
+        .col-md-2
+        {
+            width: 50%;
+            padding-left: 0px;
+        }
+        .student{
+        
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        }
+        .form-row{
+            
+        }
+        .row{
+            margin: 0px !important;
+        }
+        .line{
+            width: 20%;
+            float:left;
+        }
+        .che{
+            padding-left: 6%;
+        }
+        .form-group{
+            /*width:98%;*/
+        }
+        .add{
+            width: 98%;
+        }
+        .form-row1{
+            padding-left: 32%;
+        }
+        .navbar-inverse{
+            height: 50px;
+            background-color: #1abc9c;
+            border-color: #1abc9c;
+            color: black; !important;
+        }
+        .navbar-inverse .navbar-brand
+        {
+            color: black;
+        }
+        .navbar-inverse .navbar-nav>li>a
+        {
+            color: black;
+        }
+		.form-group,.form-check,.file-field
+		{
+		    width: 100%;
+		    display:inline-block;
+		}
+  </style>
+</head>
+<body class="backgrnd">
+  <div class="container1" width="100%">
+      <div ui-view>
+      
+      </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<div class="odApply">
+	<table class="table">
+		<thead class="thead-dark">
+		    <tr>
+		      
+		      <th scope="col">From_Date</th>
+		      <th scope="col">To_Date</th>
+		      <th scope="col">Event</th>
+		      <th scope="col">Venue</th>
+		      <th scope="col">Title</th>
+		      <th scope="col">Periods</th>
+		      <th scope="col">Hours</th>
+		    </tr>
+		 </thead>
+		 <tbody>
+			 <tr ng-repeat="row in myArray">
+			  
+			    <td>{{ row.from_date }}</td>
+			    <td>{{ row.to_date }}</td>
+			    <td>{{ row.event }}</td>
+			    <td>{{ row.venue }}</td>
+			    <td>{{ row.title }}</td>
+			    <td>{{ row.periods }}</td>
+			    <td>{{ row.hours }}</td>
+		     </tr>
+		 </tbody>
+	</table>
+</div>

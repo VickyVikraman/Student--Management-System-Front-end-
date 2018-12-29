@@ -1,0 +1,168 @@
+
+	<fieldset>
+	        <legend>User</legend>
+	        <div class="user">
+	            <div class=" form-group row ">
+	                <label for="roll" class="col-sm-4 col-form-label">RollNo</label>
+	                <div class="col-sm-8">
+	                    <input type="text" class="form-control" ng-model="user.rollno" id="roll" >
+	                </div>
+	            </div>
+	            <div class="form-group row ">
+	                <label for="name" class="col-sm-4 col-form-label">Name</label>
+	                <div class="col-sm-8">
+	                    <input type="text" class="form-control" id="name" ng-model="user.name">
+	                </div>
+	            </div>
+	            <div class="form-group row ">
+	                <label for="dob" class="col-sm-4 col-form-label">D.O.B</label>
+	                <div class="col-sm-8">
+	                    <input type="date" class="form-control" id="dob" ng-model="dateOfBirth">
+	                </div>
+	            </div>
+	            <div class="form-group row">
+	                <label for="age" class="col-sm-4 col-form-label">Age</label>
+	                <div class="col-sm-8">
+	                    <input type="number" class="form-control" id="age" ng-model="user.age">
+	                </div>
+	            </div>
+	            <div class="form-group row">
+	                <label for="gender" class="col-sm-4 col-form-label">Gender</label>
+	                <div class="col-sm-8">
+	                    <select class="form-control" id="gender" ng-model="user.gender">
+	                        <option ng-value="Select">Select</option>
+	                        <option ng-value="Male">Male</option>
+	                        <option ng-value="Female">Female</option>
+	                    </select>
+	                </div>
+	            </div>
+	            <!-- <div class="form-check row ">
+	                <label for="gen">Gender</label>
+	                <div id="gen">
+	                    <input class="form-check-input" type="radio" name="gender"  ng-model="user.gender" value="Male" checked="" required="">&nbsp;&nbsp;<b>Male</b>
+	                    <input class="form-check-input" type="radio" name="gender" ng-model="user.gender" value="Female" required="">&nbsp;&nbsp;<b>Female</b>
+	                    <br>
+	                </div>
+	            </div>
+	             -->
+	            <div class="form-group row ">
+	                <label for="mode" class="col-sm-4 col-form-label">Mode Of Admission</label>
+	                <div class="col-sm-8">
+	                    <select id="mode" class="form-control" ng-model="user.modeOfAdd">
+	                        <option value="Councelling">Councelling</option>
+	                        <option value="Management">Management</option>
+	                        <option value="NRI">NRI</option>
+	                        <option value="Others">Others</option>
+	                    </select>
+	                </div>
+	            </div>
+	            <div class=" form-group row">
+	                <label for="pmail" class="col-sm-4 col-form-label">Persoanl MailID</label>
+	                <div class="col-sm-8">
+	                    <input type="email" class="form-control" id="pmail" ng-model="user.personalMail">
+	                </div>
+	            </div>
+	            <div class=" form-group row ">
+	                <label for="kmain" class="col-sm-4 col-form-label">Kongu MailID</label>
+	                <div class="col-sm-8">
+	                    <input type="email" class="form-control" id="kmain" ng-model="user.konguMail">
+	                </div>
+	            </div>
+	            <div class="form-group row">
+	                <label for="cntsem" class="col-sm-4 col-form-label">Current Semester</label>
+	                <div class="col-sm-8">
+	                    <input type="number" class="form-control" id="cntsem" ng-model="user.currentSem">
+	                </div>
+	            </div>
+	            <div class=" form-group row ">
+	            <label for="community" class="col-sm-4 col-form-label">Community</label>
+	            <div class="col-sm-8">
+	                <input type="text" class="form-control" id="community"  ng-model="user.community">
+	            </div>
+	        </div>
+	        </div>
+	        <div class="user">
+	            <div class=" form-group row ">
+	                <label for="caste" class="col-sm-4 col-form-label">Caste</label>
+	                <div class="col-sm-8">
+	                    <input type="text" class="form-control" id="caste" ng-model="user.caste">
+	                </div>
+	            </div>
+	            <div class=" form-group row ">
+	                <label for="blood" class="col-sm-4 col-form-label">Blood Group</label>
+	                <div class="col-sm-8">
+	                    <input type="text" class="form-control" id="blood" ng-model="user.blood">
+	                </div>
+	            </div>
+	            <div class=" form-group row ">
+	                <label for="aadhaar" class="col-sm-4 col-form-label">Aadhaar No</label>
+	                <div class="col-sm-8">
+	                    <input type="text" class="form-control" id="aadhaar" ng-model="user.aadhaarNo">
+	                </div>
+	            </div>
+	            <div class=" form-group row ">
+	                <label for="accno" class="col-sm-4 col-form-label">Account No</label>
+	                <div class="col-sm-8">
+	                    <input type="text" class="form-control" id="accno"  ng-model="user.accountNo">
+	                </div>
+	            </div>
+	            <div class=" form-group row ">
+	                <label for="hostel" class="col-sm-4 col-form-label">Hostel</label>
+	                <div class="col-sm-8">
+	                    <select class="form-control" id="hostel" ng-model="user.hostel">
+	                        <option ng-value="YES">YES</option>
+	                        <option ng-value="NO">NO</option>
+	                    </select>
+	                </div>
+	            </div>
+	            <!-- <div class="form-check row">
+	                <label for="gen">Hoster</label>
+	                <div id="gen">
+	                    <input class="form-check-input" type="radio" name="hostel" ng-model="user.hostel" value="Yes" checked="" required >&nbsp;&nbsp;<b> Yes</b>
+	
+	                    <input class="form-check-input" type="radio" name="hostel" ng-model="user.hostel" value="No" required>&nbsp;&nbsp; <b>No</b>
+	                </div>
+	            </div> -->
+	            <div class=" form-group row ">
+	                <label for="hname" class="col-sm-4 col-form-label">Hostel Name</label>
+	                <div class="col-sm-8">
+	                    <input type="text" class="form-control" id="hname" ng-model="user.hostelName">
+	                </div>
+	            </div>
+	            <div class="form-group row ">
+	                <label for="rno" class="col-sm-4 col-form-label">Room No</label>
+	                <div class="col-sm-8">
+	                    <input type="number" class="form-control" id="rno" ng-model="user.roomNo">
+	                </div>
+	            </div>
+	            <div class=" form-group row ">
+	                <label for="bus" class="col-sm-4 col-form-label">Bus</label>
+	                <div class="col-sm-8">
+	                    <select class="form-control" id="bus" ng-model="user.bus">
+	                        <option ng-value="YES">YES</option>
+	                        <option ng-value="NO">NO</option>
+	                    </select>
+	                </div>
+	            </div>
+	            <!-- <div class="form-check row ">
+	                <label for="gen">Bus</label>
+	                <div id="gen">
+	                    <input class="form-check-input" type="radio" name="bus" id="exampleRadios1" ng-model="user.bus" value="Yes" checked="" required="">&nbsp;&nbsp; <b>Yes</b>
+	                    <input class="form-check-input" type="radio" name="bus" id="exampleRadios2" ng-model="user.bus" value="No" required="">&nbsp;&nbsp;<b> No</b>
+	                </div>
+	            </div>
+	             -->
+	            <div class="form-group row ">
+	                <label for="board" class="col-sm-4 col-form-label">Board From</label>
+	                <div class="col-sm-8">
+	                    <input type="text" class="form-control" id="board" ng-model="user.boardFrom">
+	                </div>
+	            </div>
+	            <div class="form-group row ">
+	                <label for="bno" class="col-sm-4 col-form-label">Bus No</label>
+	                <div class="col-sm-8">
+	                    <input type="number" class="form-control" id="bno" ng-model="user.busNo">
+	                </div>
+	            </div>
+	        </div>
+	    </fieldset>

@@ -1,0 +1,26 @@
+<div>
+	<div class="container1">
+			<nav class="navbar">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<p class="navbar-brand" href="#">Kongu Engineering College</p>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li>{{ rollnumber }}</a></li>
+					<li><a ng-click="sample()">Log out</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div class="student container">
+		<form ng-submit="validation()" enctype="multipart/form-data">
+			<ng-include src="'register/user.html'"></ng-include>
+			<ng-include src="'register/school.html'"></ng-include>
+			<ng-include src="'register/address.html'"></ng-include>
+			<ng-include src="'register/contact.html'"></ng-include>
+			<div class="form-row1">
+					<button type="submit" class="btn col-md-6 btn-primary" >Submit</button>
+			</div>
+		</form>
+	</div>
+</div>

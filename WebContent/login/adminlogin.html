@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<body>
+		<div class="login-form ng-scope">
+		    <h3 style="color: black;font-family: cursive;text-align: center;font-size: 30px;margin-top: -26">Student Academic Management System</h3><br><br>
+		    <br>
+		    <br>
+		    <br>
+		    <h3 style="text-align: center;font-size: larger;">
+		        <a style="color: black" href="#admin">Admin Login</a> | <a style="color:black" href="hod">HOD Login</a></h3>
+		    <div style="padding: 0% 36% 0% 39%;">
+		        <h1 class="heading" style="color:black;font-size:2.3em">STUDENT LOGIN</h1>
+				<div class="login-top">
+	    		    <p style="color:red" class="ng-binding">   </p>
+			        <form ng-submit="formSubmit()" name="loginForm" class="ng-pristine ng-valid">
+			            <div class="login-ic">
+			                <input type="text" name="rollno" ng-model="rollno" onfocus="this.value = '';" placeholder="Roll NO" class="ng-pristine ng-valid">
+			                <div class="clear"></div>
+			            </div>
+			            <div class="login-ic">
+			                <input type="password" name="password" ng-model="password" onfocus="this.value = '';" placeholder="*******" class="ng-pristine ng-valid">
+			                <div class="clear"></div>
+			            </div>	
+			            <div class="log-bwn">
+			                <input type="submit" ng-model="submit" value="Login" class="ng-pristine ng-valid">
+			            </div>
+			            <br>
+			            <a href="#" style="color: black" data-target="#pwdModal" data-toggle="modal">Forgot my password</a>
+			        </form>
+			    </div>
+		    </div>
+		</div>
+	</body>
+</html>

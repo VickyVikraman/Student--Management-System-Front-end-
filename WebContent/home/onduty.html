@@ -1,0 +1,44 @@
+<div class="odApply">
+	  <form  method="post" ng-submit="apply()" name="sam" enctype="multipart/form-data" >
+			<div class="col-md-12">
+				<div class="col-md-6">
+						<label for="from" class="form-label">From</label>
+						<input type='date' name='startd' ng-model="od.from_date" class="form-control" id='fromDate'/>
+				</div>
+				<div class="col-md-6">
+					<label for="to" class="form-label">To</label>
+		          	<input type='date' name='endate' class="form-control" ng-model="od.to_date" id='toDate'>
+				</div>
+			</div>
+		    <div class="col-md-6">
+		    	<label for="event" class="form-label">Event Name</label>
+	                <select name="eventName"  class="form-control" id="event" ng-model="od.event">
+	                    <option selected value=""></option>	
+						<option value="Paper Presentation">Paper Presentation</option>
+						<option value="Project Presentation">Project Presentation</option>
+		            </select>
+			</div>
+			<div class="col-md-6">
+				<label for="title" class="form-label">Title</label>
+		             <input type="text" id="title" name="title" class="form-control" ng-model="od.title">
+		    </div>
+		    <div class="col-md-6">
+				<label for="venue" class="form-label">Venue</label>
+		             <input type="text" name="venue" id="venue" class="form-control" ng-model="od.venue">
+			</div>
+			<div class="col-md-6">
+				<label for="periods" class="form-label">No Of Periods</label>
+					<input type="number" name="period" class="form-control" id="period" ng-model="od.periods">
+			</div>
+			<div class="col-md-12 row">
+				<div class="col-md-6"> 
+				<label for="hrs" class="form-label">Hours</label>
+					<input type="text" name="hours"  id="hrs" class="form-control" ng-model="od.hours">
+					<span style="color:red">*Hours seperated by comma(",")</span>
+				</div>
+			</div>
+		   	<div class="col-md-4" style="left:40%;top:20px">
+		   		<input type="submit" value="Apply"  class="btn btn-primary col-md-6">
+		   	</div>
+		</form>
+	</div>
